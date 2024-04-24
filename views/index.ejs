@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles/main.css">
+    
+
+</head>
+<body>
+    
+    <div class="converter">
+        <div style="display: flex; justify-content: center; align-items: center; ">
+        <script class="animation" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/9f16659f-d59d-4d8a-95bb-f52917185c90/Ee3GJvXQSn.json" background="transparent" speed="1" style="width: 100px; height: 100px; filter: brightness(40%);" loop autoplay></dotlottie-player>
+    </div>  
+     <h1 class="heading">Currency Converter</h1>
+        <label for="fromCurrency">From:</label>
+        <select id="fromCurrency">
+            <option value="INR">INR - <span class="countryname">Indian Rupee</span></option>
+            <option value="USD" selected>USD - <span class="countryname">US Dollar</span></option>
+            <option value="AED">AED - <span class="countryname">UAE Dirham</span></option>
+<option value="AFN">AFN - <span class="countryname">Afghan Afghani</span></option>
+<option value="ALL">ALL - <span class="countryname">Albanian Lek</span></option>
+<option value="AMD">AMD - <span class="countryname">Armenian Dram</span></option>
+<option value="ANG">ANG - <span class="countryname">Netherlands Antillian Guilder</span></option>
+<option value="AOA">AOA - <span class="countryname">Angolan Kwanza</span></option>
+<option value="ARS">ARS - <span class="countryname">Argentine Peso</span></option>
+<option value="AUD">AUD - <span class="countryname">Australian Dollar</span></option>
+<option value="AWG">AWG - <span class="countryname">Aruban Florin</span></option>
+<option value="AZN">AZN - <span class="countryname">Azerbaijani Manat</span></option>
+<option value="BAM">BAM - <span class="countryname">Bosnia and Herzegovina Mark</span></option>
+<option value="BBD">BBD - <span class="countryname">Barbados Dollar</span></option>
+<option value="BDT">BDT - <span class="countryname">Bangladeshi Taka</span></option>
+<option value="BGN">BGN - <span class="countryname">Bulgarian Lev</span></option>
+<option value="BHD">BHD - <span class="countryname">Bahraini Dinar</span></option>
+<option value="BIF">BIF - <span class="countryname">Burundian Franc</span></option>
+<option value="BMD">BMD - <span class="countryname">Bermudian Dollar</span></option>
+<option value="BND">BND - <span class="countryname">Brunei Dollar</span></option>
+<option value="BOB">BOB - <span class="countryname">Bolivian Boliviano</span></option>
+<option value="BRL">BRL - <span class="countryname">Brazilian Real</span></option>
+<option value="BSD">BSD - <span class="countryname">Bahamian Dollar</span></option>
+<option value="BTN">BTN - <span class="countryname">Bhutanese Ngultrum</span></option>
+<option value="BWP">BWP - <span class="countryname">Botswana Pula</span></option>
+<option value="BYN">BYN - <span class="countryname">Belarusian Ruble</span></option>
+<option value="BZD">BZD - <span class="countryname">Belize Dollar</span></option>
+<option value="CAD">CAD - <span class="countryname">Canadian Dollar</span></option>
+<option value="CDF">CDF - <span class="countryname">Congolese Franc</span></option>
+<option value="CHF">CHF - <span class="countryname">Swiss Franc</span></option>
+<option value="CLP">CLP - <span class="countryname">Chilean Peso</span></option>
+<option value="CNY">CNY - <span class="countryname">Chinese Renminbi</span></option>
+<option value="COP">COP - <span class="countryname">Colombian Peso</span></option>
+<option value="CRC">CRC - <span class="countryname">Costa Rican Colon</span></option>
+<option value="CUP">CUP - <span class="countryname">Cuban Peso</span></option>
+<option value="CVE">CVE - <span class="countryname">Cape Verdean Escudo</span></option>
+<option value="CZK">CZK - <span class="countryname">Czech Koruna</span></option>
+<option value="DJF">DJF - <span class="countryname">Djiboutian Franc</span></option>
+<option value="DKK">DKK - <span class="countryname">Danish Krone</span></option>
+<option value="DOP">DOP - <span class="countryname">Dominican Peso</span></option>
+<option value="DZD">DZD - <span class="countryname">Algerian Dinar</span></option>
+<option value="EGP">EGP - <span class="countryname">Egyptian Pound</span></option>
+<option value="ERN">ERN - <span class="countryname">Eritrean Nakfa</span></option>
+<option value="ETB">ETB - <span class="countryname">Ethiopian Birr</span></option>
+<option value="EUR">EUR - <span class="countryname">Euro</span></option>
+<option value="FJD">FJD - <span class="countryname">Fiji Dollar</span></option>
+<option value="FKP">FKP - <span class="countryname">Falkland Islands Pound</span></option>
+<option value="FOK">FOK - <span class="countryname">Faroese Króna</span></option>
+<option value="GBP">GBP - <span class="countryname">Pound Sterling</span></option>
+<option value="GEL">GEL - <span class="countryname">Georgian Lari</span></option>
+<option value="GGP">GGP - <span class="countryname">Guernsey Pound</span></option>
+<option value="GHS">GHS - <span class="countryname">Ghanaian Cedi</span></option>
+<option value="GIP">GIP - <span class="countryname">Gibraltar Pound</span></option>
+<option value="GMD">GMD - <span class="countryname">Gambian Dalasi</span></option>
+<option value="GNF">GNF - <span class="countryname">Guinean Franc</span></option>
+<option value="GTQ">GTQ - <span class="countryname">Guatemalan Quetzal</span></option>
+<option value="GYD">GYD - <span class="countryname">Guyanese Dollar</span></option>
+<option value="HKD">HKD - <span class="countryname">Hong Kong Dollar</span></option>
+
+         
+            
+            <!-- Add more currency options here -->
+        </select>
+        <label for="toCurrency">To:</label>
+        <select id="toCurrency">
+            <option value="INR" selected>INR - <span class="countryname">Indian Rupee</span></option>
+            <option value="USD">USD - <span class="countryname">US Dollar</span></option>
+            <option value="AED">AED - <span class="countryname">UAE Dirham</span></option>
+            <option value="AFN">AFN - <span class="countryname">Afghan Afghani</span></option>
+            <option value="ALL">ALL - <span class="countryname">Albanian Lek</span></option>
+            <option value="AMD">AMD - <span class="countryname">Armenian Dram</span></option>
+            <option value="ANG">ANG - <span class="countryname">Netherlands Antillian Guilder</span></option>
+            <option value="AOA">AOA - <span class="countryname">Angolan Kwanza</span></option>
+            <option value="ARS">ARS - <span class="countryname">Argentine Peso</span></option>
+<option value="AUD">AUD - <span class="countryname">Australian Dollar</span></option>
+<option value="AWG">AWG - <span class="countryname">Aruban Florin</span></option>
+<option value="AZN">AZN - <span class="countryname">Azerbaijani Manat</span></option>
+<option value="BAM">BAM - <span class="countryname">Bosnia and Herzegovina Mark</span></option>
+<option value="BBD">BBD - <span class="countryname">Barbados Dollar</span></option>
+<option value="BDT">BDT - <span class="countryname">Bangladeshi Taka</span></option>
+<option value="BGN">BGN - <span class="countryname">Bulgarian Lev</span></option>
+<option value="BHD">BHD - <span class="countryname">Bahraini Dinar</span></option>
+<option value="BIF">BIF - <span class="countryname">Burundian Franc</span></option>
+<option value="BMD">BMD - <span class="countryname">Bermudian Dollar</span></option>
+<option value="BND">BND - <span class="countryname">Brunei Dollar</span></option>
+<option value="BOB">BOB - <span class="countryname">Bolivian Boliviano</span></option>
+<option value="BRL">BRL - <span class="countryname">Brazilian Real</span></option>
+<option value="BSD">BSD - <span class="countryname">Bahamian Dollar</span></option>
+<option value="BTN">BTN - <span class="countryname">Bhutanese Ngultrum</span></option>
+<option value="BWP">BWP - <span class="countryname">Botswana Pula</span></option>
+<option value="BYN">BYN - <span class="countryname">Belarusian Ruble</span></option>
+<option value="BZD">BZD - <span class="countryname">Belize Dollar</span></option>
+<option value="CAD">CAD - <span class="countryname">Canadian Dollar</span></option>
+<option value="CDF">CDF - <span class="countryname">Congolese Franc</span></option>
+<option value="CHF">CHF - <span class="countryname">Swiss Franc</span></option>
+<option value="CLP">CLP - <span class="countryname">Chilean Peso</span></option>
+<option value="CNY">CNY - <span class="countryname">Chinese Renminbi</span></option>
+<option value="COP">COP - <span class="countryname">Colombian Peso</span></option>
+<option value="CRC">CRC - <span class="countryname">Costa Rican Colon</span></option>
+<option value="CUP">CUP - <span class="countryname">Cuban Peso</span></option>
+<option value="CVE">CVE - <span class="countryname">Cape Verdean Escudo</span></option>
+<option value="CZK">CZK - <span class="countryname">Czech Koruna</span></option>
+<option value="DJF">DJF - <span class="countryname">Djiboutian Franc</span></option>
+<option value="DKK">DKK - <span class="countryname">Danish Krone</span></option>
+<option value="DOP">DOP - <span class="countryname">Dominican Peso</span></option>
+<option value="DZD">DZD - <span class="countryname">Algerian Dinar</span></option>
+<option value="EGP">EGP - <span class="countryname">Egyptian Pound</span></option>
+<option value="ERN">ERN - <span class="countryname">Eritrean Nakfa</span></option>
+<option value="ETB">ETB - <span class="countryname">Ethiopian Birr</span></option>
+<option value="EUR">EUR - <span class="countryname">Euro</span></option>
+<option value="FJD">FJD - <span class="countryname">Fiji Dollar</span></option>
+<option value="FKP">FKP - <span class="countryname">Falkland Islands Pound</span></option>
+<option value="FOK">FOK - <span class="countryname">Faroese Króna</span></option>
+<option value="GBP">GBP - <span class="countryname">Pound Sterling</span></option>
+<option value="GEL">GEL - <span class="countryname">Georgian Lari</span></option>
+<option value="GGP">GGP - <span class="countryname">Guernsey Pound</span></option>
+<option value="GHS">GHS - <span class="countryname">Ghanaian Cedi</span></option>
+<option value="GIP">GIP - <span class="countryname">Gibraltar Pound</span></option>
+<option value="GMD">GMD - <span class="countryname">Gambian Dalasi</span></option>
+<option value="GNF">GNF - <span class="countryname">Guinean Franc</span></option>
+<option value="GTQ">GTQ - <span class="countryname">Guatemalan Quetzal</span></option>
+<option value="GYD">GYD - <span class="countryname">Guyanese Dollar</span></option>
+<option value="HKD">HKD - <span class="countryname">Hong Kong Dollar</span></option>
+            <!-- Add more currency options here -->
+        </select>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" placeholder="Enter amount...">
+        <button onclick="convertCurrency()">Convert</button>
+        <div class="result">
+            <label for="convertedAmount" class="result-label"><strong>Converted Amount:-</strong> </label>
+            <input id="convertedAmount" name="convertedAmount" placeholder="Result" readonly>
+        </div>
+    </div>
+    
+    
+    <script>
+        async function convertCurrency() {
+            var fromCurrency = document.getElementById("fromCurrency").value;
+            var toCurrency = document.getElementById("toCurrency").value;
+            var amount = document.getElementById("amount").value;
+
+            try {
+                const response = await fetch(`https://v6.exchangerate-api.com/v6/a36faa18cdafb26c8e8a87f9/latest/${fromCurrency}`);
+                const data = await response.json();
+
+                if (data.conversion_rates.hasOwnProperty(toCurrency)) {
+                    const exchangeRate = data.conversion_rates[toCurrency];
+                    const convertedAmount = (amount * exchangeRate).toFixed(2);
+                    document.getElementById("convertedAmount").value = convertedAmount;
+                } else {
+                    document.getElementById("convertedAmount").value = "Conversion not available";
+                }
+            } catch (error) {
+                console.error("Error:", error);
+                document.getElementById("convertedAmount").value = "Conversion error";
+            }
+        }
+    </script>
+    <footer>
+        <p class="footer">𝔅𝔲𝔦𝔩𝔡 𝔟𝔶 𝔖𝔞𝔲𝔯𝔞𝔟𝔥 🚀</p>
+    </footer>
+</body>
+</html>
