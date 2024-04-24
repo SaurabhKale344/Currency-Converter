@@ -70,12 +70,12 @@ body::before {
 }
 
 .footer{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: rgb(13, 13, 14);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -10rem;
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -84,7 +84,7 @@ body::before {
         display: grid;
         justify-content: center;
         align-items: center;
-        width: 100%; /* Example: reduce width for smaller screens */
+        width: 80%; /* Example: reduce width for smaller screens */
     }
 }
 
